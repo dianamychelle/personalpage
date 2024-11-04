@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* Variables */
+/* ------Variables------ */
 :root {
   --font-family: "Roboto", sans-serf;
   --normal-font: 400;
@@ -15,19 +15,19 @@
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
-}
-/* Variables fin */
+}/*setting variables of css*/
+
 
 html {
   scroll-behavior: smooth;
-}
+} /*it's for ux, a smooth navigation */
 
-/* CSS Resets */
+/*------ CSS Resets------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} /*delete margin and margin from all elements, and border box it's to avoid more space of a element*/
 
 ul {
   list-style-type: none;/*deleting vignettes*/
@@ -47,14 +47,14 @@ body {
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
+    position: sticky; /*stick an element*/
+    top: 0; /*attached at the top*/
+    left: 0; /*attached at the left*/
+    z-index: 1; /*will be displayed on top of other elements*/
+    display: flex; /*flex container*/
     align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3.5rem;
+    justify-content: space-between; /*distribute the elements within nav*/
+    padding: 1.5rem 3.5rem; /*add a inner space on top, and below. Left and right*/
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
