@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
 
 /* ------Variables------ */
 :root {
@@ -119,4 +121,20 @@ nav {
   .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
+  }
+/*moreAboutMe*/
+  .more-about {
+    background-color: var(--bg-color);
+    margin-top: 30px;
+    padding: 1rem 6rem;
+  }
+  
+  .more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  .more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
   }
