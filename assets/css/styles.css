@@ -104,8 +104,8 @@ nav {
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 45.5rem;
+    height: 30rem;
+    width: 50rem;
   }
   
   .bio {
@@ -118,7 +118,18 @@ nav {
   .bio h1 {
     margin-bottom: var(--bottom-margin);
   }
-  
+  /*Aplying the same style for headers2*/
+  .bio h2:hover, .more-about h2:hover, .skill-header:hover,.contact h2:hover {
+    color:var(--secondary-color);
+  }
+
+  .bio-titulo .icon {
+    width: 30px; /* Tamaño del icono */
+    height: 30px; /* Tamaño del icono */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+  }
+
   .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
