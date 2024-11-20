@@ -8,17 +8,12 @@
     <!--Estilos CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="assets/icons/mainIcon.png"
     />
 
     <!-- Animaciones CSS CDN -->
@@ -26,17 +21,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Diana Michelle | Computer Engineer</title>
+    <title>Computer Engineer</title>
   </head>
 
   <body>
-    <!-- Barra de Navegación -->
+    <!-- Bav Bar -->
     <nav>
         <h1>DIANA MICHELLE</h1>
         <ul class="navegation">
           <li><a href="#aboutme" class="nav-link">About me</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <!--<li><a href="#projects" class="nav-link">Projects</a></li>-->
           <li><a href="#formation" class="nav-link">Formation</a></li>
           <li><a href="#getintouch" class="nav-link">Get in touch</a></li>
         </ul>
@@ -46,7 +41,7 @@
   </nav>
 
     <!-- Sección Hero  -->
-    <section class="hero" id="about">
+    <section class="hero" id="aboutme">
       <img
         src="assets/images/hero-001.png"
         alt="diana-michelle"
@@ -56,7 +51,7 @@
       <div class="bio animate__animated animate__shakeX">
         <h2 class="bio-titulo">Hey there 🫰</h2>
         <p class="bio-texto">
-          Curiosity and order? Yeah I know they sound like opposites, but I identify with both. Enjoying new activities that require strategic planning.
+          Have you ever wondered if curiosity and order can go hand in hand? Yeah I know they sound like opposites, but I identify with both.
         </p>
       </div>
 </section>
@@ -64,20 +59,127 @@
     <!-- Sobre Mí -->
     <section class="more-about">
       <h2>More About Me</h2>
-      <p> As a computer engineer I have developed and explored my skills as a Project Manager.  When I'm not in front of the screen, look for me in the garden, in the mountains or playing with my companion: Wero, my cat.</p>
+      <p>As a computer engineer, I have developed and honed my skills as a Project Manager, embracing challenges that require creative solutions and team collaboration. While I haven’t had significant hands-on experience with programming in my career, I find it fascinating and enjoy exploring concepts related to it. I’m eager to further develop my understanding of programming as I continue growing professionally.</p>
+      <p>When I'm not in front of the screen, you can find me in the garden, hiking in the mountains, or spending quality time with my companion: Wero, my cat.</p>
+      <p>I enjoy taking on new challenges that involve strategic planning. I value opportunities that allow me to learn and expand my skill set. For me, growth is a constant journey, and I look forward to building on my technical knowledge.</p>
+      
     </section>
 
     <!-- Sección Habilidades -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/archive-stack-fill.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/archive-stack-fill.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/archive-stack-fill.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+        <!--
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/archive-stack-fill.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/archive-stack-fill.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/archive-stack-fill.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>-->
+      </div>
+    </section>
 
     <!-- Sección Proyectos -->
 
     <!-- Sección Contacto-->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xnnqzgzg" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- Sección de redes sociales - Fijado a la derecha -->
 
     <!-- Vuelve al comienzo  -->
 
     <!-- Sección Footer  -->
+    <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://github.com/dianamychelle" target="_blank"
+          >Diana Michelle</a
+        >
+      </p>
+</footer>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
