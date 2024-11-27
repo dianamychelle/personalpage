@@ -11,10 +11,10 @@
   --bg-color: #fcfcfc;
   --primary-color: #06096f;
   --secondary-color: #CF6DC8;
-  --tertiary-color:#626eb3;
+  --tertiary-color:#6DC8CF;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
-  --tertiary-color: #211f32;
+  /*--tertiary-color: #211f32;*/
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -203,10 +203,12 @@ nav {
     border: none;
     border-bottom: 2px solid var(--primary-color); 
     outline: none;
+    font-family: var(--font-family); 
   }
   .contact-form-container .input-field:focus {
     border-bottom: 3px solid  var(--secondary-color);; /* Cambiar el color cuando el campo esté en foco */
   }
+
   .submit-btn {
     width: 100%;
     padding: 10px;
