@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Estilos CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/mainIcon.png"
+    />
+
+    <!-- Animaciones CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Computer Engineer</title>
+  </head>
+
+  <body>
+    <!-- Bav Bar -->
+    <div id="navbar"></div>
+    <!-- Starts section   -->
+    <section class="formation">
+        <h2>Educational journey</h2>
+        
+      </section>
+    <!-- Ends section   -->
+
+    <!-- Sección Footer  -->
+    <div id="footer"></div>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      // Función para cargar archivos HTML dinámicamente
+      async function loadComponent(id, file) {
+        try {
+          const response = await fetch(file);
+          if (!response.ok) throw new Error(`Error al cargar ${file}: ${response.statusText}`);
+          const content = await response.text();
+          document.getElementById(id).innerHTML = content;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+  
+      // Cargar navbar y footer
+      loadComponent('navbar', 'navbar.html');
+      loadComponent('footer', 'footer.html');
+    </script>
+  </body>
+</html>
