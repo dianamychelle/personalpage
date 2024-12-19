@@ -27,20 +27,33 @@
   <body>
     <!-- Bav Bar -->
     <div id="navbar"></div>
+
     <!-- Starts section   -->
     <section class="formation" id="formation">
-        <h2>Educational journey</h2>
-        <p>
-          I am a Computer Engineering with a passion for learning and applying new knowledge in the field of technology. I have had the opportunity to develop skills in programming, project management and problem solving. I am committed to continuing my education and expanding my skills through courses and practical experiences, with the aim of continuing to grow professionally and contribute to innovative projects.
-        </p>
-        
+
+      <h2 class="form-titulo">Educational journey</h2>
+      <p>
+        I am a Computer Engineering with a passion for learning and applying new
+        knowledge in the field of technology. I have had the opportunity to
+        develop skills in programming, project management and problem solving. I
+        am committed to continuing my education and expanding my skills through
+        courses and practical experiences, with the aim of continuing to grow
+        professionally and contribute to innovative projects.
+      </p>
+
+
+       <!-- Lista de elementos de formación -->
+      <section id="items">
+        <div class="item" data-category="curso">
+          <h3>EF SET English Certificate 63/100</h3>
+          <p>Type: Certificate</p>
+          <p>Date: Jun-2024</p>
+          <a href="https://cert.efset.org/n6eM2Q">See more</a>
+        </div>
       </section>
 
-    <!--Search bar-->
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search courses, workshops">
-    </div>
 
+    </section>
 
     <!-- Sección Footer  -->
     <div id="footer"></div>
@@ -62,17 +75,18 @@
       async function loadComponent(id, file) {
         try {
           const response = await fetch(file);
-          if (!response.ok) throw new Error(`Error al cargar ${file}: ${response.statusText}`);
+          if (!response.ok)
+            throw new Error(`Error al cargar ${file}: ${response.statusText}`);
           const content = await response.text();
           document.getElementById(id).innerHTML = content;
         } catch (error) {
           console.error(error);
         }
       }
-  
+
       // Cargar navbar y footer
-      loadComponent('navbar', 'navbar.html');
-      loadComponent('footer', 'footer.html');
+      loadComponent("navbar", "navbar.html");
+      loadComponent("footer", "footer.html");
     </script>
   </body>
 </html>
