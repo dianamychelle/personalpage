@@ -1,113 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Estilos CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/mainIcon.png"
-    />
+  <!--Estilos CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Animaciones CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Computer Engineer</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/mainIcon.png" />
 
-  <body>
-    <!-- Bav Bar -->
-    <div id="navbar"></div>
+  <!-- Animaciones CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Computer Engineer</title>
+</head>
 
-    <!-- Starts section   -->
-    <section class="formation" id="formation">
+<body>
+  <!-- Bav Bar -->
+  <div id="navbar"></div>
 
-      <h2 class="form-titulo">Educational journey</h2>
-      <p>
-        I am a Computer Engineering with a passion for learning and applying new
-        knowledge in the field of technology. I have had the opportunity to
-        develop skills in programming, project management and problem solving. I
-        am committed to continuing my education and expanding my skills through
-        courses and practical experiences, with the aim of continuing to grow
-        professionally and contribute to innovative projects.
-      </p>
-      <!--Search bar-->
-      <div class="search-bar" id="search-bar">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder=" &#128269; Search courses, workshops, certificates ..."
-        />
+  <!-- Starts section   -->
+  <section class="formation" id="formation">
+
+    <h2 class="form-titulo">Educational journey</h2>
+    <p>
+      I am <a href="https://mx.linkedin.com/in/perezrdianam/en?trk=profile-badge">Diana Michelle Pérez Rodríguez</a> a
+    Computer Engineering with a passion for learning and applying new
+    knowledge in the field of technology. I have had the opportunity to
+    develop skills in programming, project management and problem solving. I
+    am committed to continuing my education and expanding my skills through
+    courses and practical experiences, with the aim of continuing to grow
+    professionally and contribute to innovative projects.
+    </p>
+
+    <!--Search bar-->
+    <div class="search-bar" id="search-bar">
+      <input type="text" id="searchInput" placeholder=" &#128269; Search courses, workshops, certificates ..." />
+    </div>
+
+    <!-- Lista de elementos de formación -->
+    <section id="items">
+      <div class="item" data-category="course">
+        <h3>Introduction to back-end development </h3>
+        <p>Type: Certificate</p>
+        <p>Date: Dec-2024</p>
+        <a href="https://www.coursera.org/account/accomplishments/verify/66C4N0LS5S72">See more</a>
       </div>
 
-       <!-- Lista de elementos de formación -->
-      <section id="items">
-        <div class="item" data-category="course">
-          <h3>Introduction to back-end development </h3>
-          <p>Type: Certificate</p>
-          <p>Date: Dec-2024</p>
-          <a href="https://www.coursera.org/account/accomplishments/verify/66C4N0LS5S72">See more</a>
-        </div>
+      <div class="item" data-category="course">
+        <h3>Networking Oracle One</h3>
+        <p>Type: Certificate</p>
+        <p>Date: Dec-2024</p>
+        <a href="assets/images/Diana Pérez Rodríguez.PNG">See more</a>
+      </div>
 
-        <div class="item" data-category="course">
-          <h3>Networking Oracle One</h3>
-          <p>Type: Certificate</p>
-          <p>Date: Dec-2024</p>
-          <a href="assets/images/Diana Pérez Rodríguez.PNG">See more</a>
-        </div>
-
-        <div class="item" data-category="course">
-          <h3>EF SET English Certificate </h3>
-          <p>Type: Certificate</p>
-          <p>Date: Jun-2024</p>
-          <a href="https://cert.efset.org/n6eM2Q">See more</a>
-        </div>
-      </section>
-
-
+      <div class="item" data-category="course">
+        <h3>EF SET English Certificate </h3>
+        <p>Type: Certificate</p>
+        <p>Date: Jun-2024</p>
+        <a href="https://cert.efset.org/n6eM2Q">See more</a>
+      </div>
     </section>
 
-    <!-- Sección Footer  -->
-    <div id="footer"></div>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+  </section>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script>
-      // Función para cargar archivos HTML dinámicamente
-      async function loadComponent(id, file) {
-        try {
-          const response = await fetch(file);
-          if (!response.ok)
-            throw new Error(`Error al cargar ${file}: ${response.statusText}`);
-          const content = await response.text();
-          document.getElementById(id).innerHTML = content;
-        } catch (error) {
-          console.error(error);
-        }
+  <!-- Sección Footer  -->
+  <div id="footer"></div>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    // Función para cargar archivos HTML dinámicamente
+    async function loadComponent(id, file) {
+      try {
+        const response = await fetch(file);
+        if (!response.ok)
+          throw new Error(`Error al cargar ${file}: ${response.statusText}`);
+        const content = await response.text();
+        document.getElementById(id).innerHTML = content;
+      } catch (error) {
+        console.error(error);
       }
+    }
 
-      // Cargar navbar y footer
-      loadComponent("navbar", "navbar.html");
-      loadComponent("footer", "footer.html");
-    </script>
-  </body>
+    // Cargar navbar y footer
+    loadComponent("navbar", "navbar.html");
+    loadComponent("footer", "footer.html");
+  </script>
+</body>
+
 </html>
